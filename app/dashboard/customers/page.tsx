@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
-
-const Page = () => {
-  console.log("customers");
-
+export default async function Page() {
   return (
     <div>
       <h1>Customers Page</h1>
@@ -11,4 +8,3 @@ const Page = () => {
   )
 }
 
-export default Page

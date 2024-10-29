@@ -1,15 +1,7 @@
-"use client"
 import SideNav from '@/app/ui/dashboard/sidenav';
 import { Client } from '@vercel/postgres';
-import { useEffect } from 'react';
+const experimental_ppr = true;
 export default function Layout({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    console.log('Layout mounted');
-
-    return () => {
-      console.log('Layout unmounted');
-    };
-  }, []);
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
       <div className="w-full flex-none md:w-64">
